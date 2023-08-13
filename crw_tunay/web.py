@@ -3,13 +3,13 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 #Web sitesinden verileri çekmek için yapılan işlem
-url = "https://easycep.com/"
+url = "https://www.otokocikinciel.com/ikinci-el-araba"
 response = requests.get(url)
 htmlicerigi = response.content
 soup = BeautifulSoup(htmlicerigi, "html.parser")
 
-isim = soup.find_all("div", attrs={"class": "product__typeOne--name"}) #İlan isimini aldırmak için yapılan işlem
-fiyat = soup.find_all("div", attrs={"class": "product__typeOne--price"}) #İlan fiyatını aldırmak için yapılan işlem
+isim = soup.find_all("div", attrs={"class": "ok-spcrlclb-carTitle"}) #İlan isimini aldırmak için yapılan işlem
+fiyat = soup.find_all("span", attrs={"class": "price list-price"}) #İlan fiyatını aldırmak için yapılan işlem
 
 
 liste = [] #bilgileri saklamak için liste oluşturma
