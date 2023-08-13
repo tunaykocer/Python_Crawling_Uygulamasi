@@ -1,0 +1,11 @@
+İlan Adı	Fiyatlar
+Apple iPhone 6s 32 GB Silver	2.899,00 TL
+Apple iPhone 6s Plus 64 GB Space Gray	4.149,00 TL
+Apple iPhone 6s 64 GB Space Gray	3.099,00 TL
+Samsung Galaxy A2 Core 16 GB Kırmızı	1.599,00 TL
+Xiaomi Redmi 9T 128 GB Mavi	4.199,00 TL
+Samsung Galaxy A72 128 GB Beyaz	9.699,00 TL
+Xiaomi Redmi Note 9 64 GB Gri	3.589,00 TL
+Apple iPhone 7 32 GB Black	4.399,00 TL
+Samsung Galaxy A50 64 GB Mavi	4.699,00 TL
+Apple iPhone 6s Plus 32 GB Silver	4.049,00 TL
