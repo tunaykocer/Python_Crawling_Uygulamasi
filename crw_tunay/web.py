@@ -8,16 +8,16 @@ response = requests.get(url)
 htmlicerigi = response.content
 soup = BeautifulSoup(htmlicerigi, "html.parser")
 
-isim = soup.find_all("div", attrs={"class": "ok-spcrlclb-carTitle"}) #İlan isimini aldırmak için yapılan işlem
-fiyat = soup.find_all("span", attrs={"class": "price list-price"}) #İlan fiyatını aldırmak için yapılan işlem
+ilanad = soup.find_all("div", attrs={"class": "ok-spcrlclb-carTitle"}) #İlan isimini aldırmak için yapılan işlem
+ilanfiyat = soup.find_all("span", attrs={"class": "price list-price"}) #İlan fiyatını aldırmak için yapılan işlem
 
 
 liste = [] #bilgileri saklamak için liste oluşturma
 
-for i in range(len(isim)):
-    isim[i] = (isim[i].text).strip("\n").strip() #isim bilgilerini listenin içine eklemek için yapılan islem
-    fiyat[i] = (fiyat[i].text).strip("\n").strip()  #fiyat bilgilerini listenin içine eklemek için yapılan islem
-    liste.append([isim[i], fiyat[i]])
+for i in range(len(ilanad)):
+    ilanad[i] = (ilanad[i].text).strip("\n").strip() #isim bilgilerini listenin içine eklemek için yapılan islem
+    ilanfiyat[i] = (ilanfiyat[i].text).strip("\n").strip()  #fiyat bilgilerini listenin içine eklemek için yapılan islem
+    liste.append([ilanad[i], ilanfiyat[i]])
 
 cikti = pd.DataFrame(liste, columns=["İlan Adı", "Fiyatlar"]) #bilgileri DataFrama ' ye çevirmek için yapılan işlem
 
